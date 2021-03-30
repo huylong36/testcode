@@ -1,0 +1,348 @@
+.container{
+    width: 1200px;
+    margin: auto;
+    height: 1500px;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    padding-top: 20px;
+}
+.header button{
+    color: white;
+    background: green;
+    border: 0;
+    padding: 10px 30px;
+    border-radius: 6px;
+    outline: none;
+}
+.search-user{
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.search-user input{
+    border: 0;
+    width: 200px;
+    padding: 7px;
+}
+.search-user button{
+    border: 0;
+    border-radius:0;
+    padding: 7px 20px;
+}
+
+
+
+.modal-popup{
+    margin-top: 100px;
+    width: 400px;
+    height: 420px;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow:0 8px 8px 0 rgba(103, 151, 255, .11), 0 12px 18px 0 rgba(103, 151, 255, .11);
+}
+.xxx{
+    display: flex;
+    margin-left: 15px;
+}
+.date{
+    margin: 0 10px;
+}
+.date select{
+    width: 87px;
+    padding: 6px;
+    text-align: center;
+    margin: 10px 0 ;
+    outline: none;
+}
+.xyz input{
+    padding: 5px;
+    margin: 7px 0;
+    width: 300px;
+    margin-left: 25px;
+}
+.gioitinh input{
+    width: unset;
+    margin: 15px 0;
+    padding: unset;
+    margin-left: 25px;
+}
+.btn-add{
+    text-align: center;
+    margin-top: 20px;
+}
+.btn-add button{
+   padding: 10px 25px;
+   border: 0;
+   border-radius: 5px;
+   background-color: yellowgreen;
+   color: white;
+   outline: none;
+}
+.menu-{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 600;
+}
+.id{
+    width: 5%;
+}
+.username{
+    width: 15%;
+}
+.gender{
+    width: 10%;
+}
+.birthday{
+    width: 10%;
+}
+.mail{
+    width: 18%;
+}
+.phoneNumber{
+    width: 13%;
+}
+.address{
+    width: 10%;
+}
+.zyx{
+    width: 19%;
+}
+.zyx button{
+    padding: 5px 25px;
+    margin: 5px 7px;;
+}
+.itemUser{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+    align-items: center;
+}
+.total-modal{
+    width: 100%;
+    z-index: 5;
+    margin: auto;
+}
+.fade.modal-backdrop.show{
+    position: unset;
+}
+#modal-view{
+    width: 385px;
+    margin-top: 90px;
+}
+.btn-header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.btn-add button{
+    background-color: unset;
+}
+.btn-add .Toastify__close-button > svg{
+    color: red;
+}
+.btn-add .Toastify__toast-body{
+    color: red;
+}
+.Toastify__toast--info {
+    background: white ;
+    color: white !important;
+}
+/* .searh-user input , button{
+    outline: none;
+    border: none;
+}
+.search-input{
+    position: relative;
+    display: flex;
+}
+.icon-search{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.search-input input{
+    width: 300px;
+    padding: 7px 10px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 7px;
+    border-radius: 4px;
+    outline: none;
+    position: relative;
+}
+.icon-search button{
+    border: 0;
+    background: transparent;
+    outline: none;
+}
+.wrapper{
+    background-color: #fff;
+}
+.wrapper .autocom-box {
+    opacity: 0;
+    pointer-events: none;
+}
+.wrapper .autocom-box li{
+    list-style: none;
+    padding: 7px 0;
+    padding-left: 15px;
+    font-weight: 700;
+    display: none;
+} */
+::selection{
+    color: #fff;
+    background: #664AFF;
+  }
+  .wrapper .search-input{
+    background: #fff;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+  }
+  
+  .search-input input{
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+  }
+  
+  .search-input.active input{
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .search-input .autocom-box{
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+  }
+  
+  .search-input.active .autocom-box{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .autocom-box li{
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+  }
+  
+  .search-input.active .autocom-box li{
+    display: block;
+  }
+  .autocom-box li:hover{
+    background: #efefef;
+  }
+  .search-input .icon{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    color: #644bff;
+    cursor: pointer;
+  }
+ 
+.chooseGender{
+    display: flex;
+    margin-left: 25px;
+}
+.chooseGender div{
+    width: 20%;
+}
+.genders{
+    display: flex;
+    margin: 15px 0;
+}
+.genders .gt{
+    margin-left: 15px ;
+}
+.menu-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.chooseFilter{
+    display: flex;
+    margin: 15px 0;
+}
+.chooseFilter select{
+    border:0;
+    outline: none;
+    width: 100%;
+}
+.searchUser input{
+    width: 100%;
+    padding: 7px 10px;
+    border: 0;
+    box-shadow:0 8px 8px 0 rgba(103, 151, 255, .11), 0 12px 18px 0 rgba(103, 151, 255, .11);
+    outline: none;
+}
+.zIndex{
+    position: absolute;
+    z-index: 5;
+    width: 89%;
+    margin: 15px 0;
+}
+.itemmmmm_{
+    background-color: #fff;
+}
+.wrewrew{
+    padding: 7px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+.xxwerwer{
+    display: flex;
+}
+.leftMenu{
+    background-color: #2A3F54;
+    min-height: 100vh;
+}
+.leftMenu .addUser{
+    width: 100%;
+    margin: 15px 0;
+    outline: none;
+}
+
+.chooseFilter button{
+    border-radius: 0;
+}
+.title{
+    color: white;
+    margin-top: 15px;
+    text-align: center;
+}
+.btn-bagination{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.btn-bagination button{
+    margin: 5px;
+    padding: 1px 10px;
+    border:0;
+    background: cornflowerblue;
+    color: white;
+}

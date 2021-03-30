@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+import View from './View/View';
+import { Provider } from 'react-redux';
+import store from './Store/Store';
+// import Autosuggest from './Autosuggest';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <View />
+  </Provider>,
   document.getElementById('root')
 );
 
